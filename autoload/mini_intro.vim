@@ -69,3 +69,6 @@ augroup END
 let &cpo = s:save_cpo
 unlet s:save_cpo
 " #endregion
+
+" vim: set tabstop=4 shiftwidth=4 textwidth=250 expandtab :
+" vim>60: set foldmethod=marker foldmarker=#region,#endregion :
