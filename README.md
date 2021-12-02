@@ -14,7 +14,7 @@ support:
 
     mkdir -p ~/.vim/plugin/vim-mini_intro
     cd ~/.vim/plugin/vim-mini_intro
-    git clone https://tpope.io/vim/repeat.git
+    git clone https://github.com/jaandrle/vim-mini_intro.git
 
 ## TODO
 - [ ] better README
