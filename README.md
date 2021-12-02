@@ -12,9 +12,13 @@ There is also support for custom bidnings inside Intro page, just add
 Install using your favorite package manager, or use Vim's built-in package
 support:
 
-    mkdir -p ~/.vim/plugin/vim-mini_intro
-    cd ~/.vim/plugin/vim-mini_intro
+    mkdir -p ~/.vim/bundle/vim-mini_intro
+    cd ~/.vim/bundle/vim-mini_intro
     git clone https://github.com/jaandrle/vim-mini_intro.git
+
+In `.vimrc`:
+
+    set runtimepath^=~/.vim/bundle/*
 
 ## TODO
 - [ ] better README
