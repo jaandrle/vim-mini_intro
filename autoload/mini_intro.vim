@@ -44,8 +44,8 @@ function! mini_intro#OnVimEnter()
             call append('$', substitute(line, s:replace_vimrc, '', 'a'))
             for line in vimrc[rand_line:rand_line+10]
                 call append('$', line)
-                continue
             endfor
+            continue
         endif
         call append('$', line)
         if line =~ '^nnoremap' | execute line | endif
