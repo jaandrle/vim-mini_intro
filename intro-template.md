@@ -1,43 +1,42 @@
 ```
                   %%VERSION%%
                                     
-                                    Autor: Bram Moolenaar a další
+                                    Author: Bram Moolenaar et al.
                                Modified by team+vim@tracker.debian.org
-                     Vim je volně šiřitelný program s otevřeným zdrojovým kódem
+                             Vim is open source and freely distributable
 
-                                   Pomozte chudým dětem v Ugandě!
-                       podrobnější informace získáte pomocí :help iccf<Enter>
+                                   Help poor children in Uganda!
+                            Type  :help iccf<Enter>       for information
 ```
 
-## Získání nápovědy
-- `:help<Enter>`: Zobrazit nápovědu (nebo také `<F1>`, `:help __něco__<Enter>`, …)
-- `:help version8<Enter>`: Zobrazit informace o této verzi
-- `sh\`, `shs`, `shh<Enter>`: Zobrazit kombinace kláves začínající `\`, `s` a jiné zajímavé
+## For on-line help
+- `:help<Enter>`: see help (also `<F1>`, `:help __something__<Enter>`, …)
+- `:help version8<Enter>`: for version info
 
 
-## Jak ukončit VIM
-- `:q<Enter>`: Ukončit program/okno (nebo také `:qa<Enter>`, `ZZ` a `ZQ` … viz `:help write-quit`)
-- `:bd<Enter>`: Zavřít soubor (tzv. „buffer”)
+## How exit VIM
+- `:q<Enter>`: Close program/window (or `:qa<Enter>`, `ZZ` a `ZQ` … see `:help write-quit`)
+- `:bd<Enter>`: Close file (so called „buffer”)
 
 
-## Rychlá navigace na této stránce
-- Otevřít soubor:
-    - `o`: *dříve otevřený* (viz `:help oldfiles<Enter>`)
-    - `e`: *prázdný*
-    - `p`: *prázdný a vložit text ze systémové schránky*
-- `m`: Seznam záložek (viz `:help mark-motions<Enter>`)
-- `c`: Upravit tento soubor
-- `P`: Rozbalit poznámky níže
+## Quick navigation on this file
+- Open file:
+    - `o`: *last files* (viz `:help oldfiles<Enter>`)
+    - `e`: *empty*
+    - `p`: *empty and paste text from clipboard*
+- `m`: Bookmarks list (see `:help mark-motions<Enter>`)
+- `c`: Edit this file
+- `P`: Expand Notes below
 
-<!--region Poznámky -->
-## Poznámky
+<!--region Notes -->
+## Notes
 <!--endregion-->
 
-## Náhodná část z konfiguračního souboru `.vimrc`
+## Random part from config file `.vimrc`
 ``` %%VIMRC%%
 ```
 
-<!--region Mapování -->
+<!--region This page maps -->
 nnoremap <buffer><silent> e :bd<cr>
 nnoremap <buffer><silent> p :bd<bar>normal "+p<cr>
 nnoremap <buffer><silent> o :browse oldfiles<cr>
