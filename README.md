@@ -14,7 +14,7 @@ support:
 
     mkdir -p ~/.vim/bundle/vim-mini_intro
     cd ~/.vim/bundle/vim-mini_intro
-    git clone https://github.com/jaandrle/vim-mini_intro.git
+    git clone -b main --single-branch https://github.com/jaandrle/vim-mini_intro.git --depth 1
 
 In `.vimrc`:
 
